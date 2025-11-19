@@ -141,38 +141,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4C-jD-OZg">
-                                <rect key="frame" x="10" y="58" width="394" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="nXj-wE-eZ7"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="I9x-0y-2HY">
-                                <rect key="frame" x="10" y="128" width="394" height="724"/>
+                                <rect key="frame" x="10" y="120" width="394" height="732"/>
                                 <color key="backgroundColor" red="0.98447047509999996" green="1" blue="0.6389325133" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ul0-wf-kJ2">
+                                <rect key="frame" x="10" y="58" width="394" height="52"/>
+                                <color key="backgroundColor" red="0.98447047509999996" green="1" blue="0.6389325133" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="g4n-Qx-jqq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UnQ-3f-juV"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
-                            <constraint firstItem="I9x-0y-2HY" firstAttribute="top" secondItem="t4C-jD-OZg" secondAttribute="bottom" constant="10" id="EF6-1y-cYp"/>
-                            <constraint firstItem="t4C-jD-OZg" firstAttribute="top" secondItem="UnQ-3f-juV" secondAttribute="top" constant="10" id="XNa-JP-3Jf"/>
-                            <constraint firstItem="t4C-jD-OZg" firstAttribute="leading" secondItem="UnQ-3f-juV" secondAttribute="leading" constant="10" id="ahE-ZD-Qer"/>
+                            <constraint firstItem="Ul0-wf-kJ2" firstAttribute="leading" secondItem="UnQ-3f-juV" secondAttribute="leading" constant="10" id="DbD-OV-H86"/>
+                            <constraint firstItem="I9x-0y-2HY" firstAttribute="top" secondItem="Ul0-wf-kJ2" secondAttribute="bottom" constant="10" id="eRL-aa-dIo"/>
+                            <constraint firstItem="UnQ-3f-juV" firstAttribute="trailing" secondItem="Ul0-wf-kJ2" secondAttribute="trailing" constant="10" id="iPw-Me-iUb"/>
                             <constraint firstItem="I9x-0y-2HY" firstAttribute="leading" secondItem="UnQ-3f-juV" secondAttribute="leading" constant="10" id="m2i-58-2FQ"/>
-                            <constraint firstItem="UnQ-3f-juV" firstAttribute="trailing" secondItem="t4C-jD-OZg" secondAttribute="trailing" constant="10" id="mxx-nf-D7f"/>
+                            <constraint firstItem="Ul0-wf-kJ2" firstAttribute="top" secondItem="UnQ-3f-juV" secondAttribute="top" constant="10" id="nBr-nh-LDM"/>
                             <constraint firstItem="UnQ-3f-juV" firstAttribute="trailing" secondItem="I9x-0y-2HY" secondAttribute="trailing" constant="10" id="nbC-tU-daI"/>
                             <constraint firstItem="UnQ-3f-juV" firstAttribute="bottom" secondItem="I9x-0y-2HY" secondAttribute="bottom" constant="10" id="sfW-sa-eZR"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="noteLabel" destination="I9x-0y-2HY" id="lig-Tf-1TL"/>
-                        <outlet property="titleLabel" destination="t4C-jD-OZg" id="1e0-KU-TJu"/>
+                        <outlet property="titleLabel" destination="Ul0-wf-kJ2" id="klP-df-HzG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M6L-mT-KPw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

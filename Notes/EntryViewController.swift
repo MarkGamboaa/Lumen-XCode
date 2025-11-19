@@ -25,6 +25,4 @@ class EntryViewController: UIViewController {
             completion?(text, noteField.text)
         }
     }
-
-
 }

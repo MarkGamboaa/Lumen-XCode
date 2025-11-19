@@ -9,7 +9,7 @@ import UIKit
 
 class NoteViewController: UIViewController {
 
-    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var titleLabel: UITextField!
     @IBOutlet var noteLabel: UITextView!
 
     public var noteTitle: String = ""
